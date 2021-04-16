@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+:root {
+  --color-primary: #915d2c;
+  --color-secondary: #a52a2a;
+  --color-accent: #fc4445;
+  --color-headings: #1b0760;
+  --color-body: #deb887;
+  --color-text-darker: rgb(16, 61, 16);
+  --color-border: #c7905c;
+  --border-radius: 30px;
+  /*#c7905c*/
+  /*#ff4040*/
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-body);
+  color: #722b53;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h4 {
+  color: var(--color-secondary);
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Navigation Bar */
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.nav__list {
+  margin: 0;
+  width: 100%;
+}
+
+.nav__item {
+  font-size: 17px;
+  border-bottom: 1px solid #222;
+  padding: 0.5rem 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-secondary);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.nav__item > a:hover {
+  color: white;
+}
+
+.nav__toggler {
+  cursor: pointer;
+  margin-top: 15px;
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  border-radius: 5px;
+  box-shadow: 0 0 0 3px #666;
+  opacity: 1;
+}
+
+.list {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+    width: auto;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
+
+/* Collapsible */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
