@@ -331,3 +331,16 @@ input[type="submit"]:hover {
     width: 700px;
   }
 }
+
+/* BACK TO TOP SECTION */
+.backtotop_link {
+  color: var(--color-secondary);
+  font-size: 15px;
+  font-weight: 100;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.backtotop_link:hover {
+  color: var(--color-primary);
+}
