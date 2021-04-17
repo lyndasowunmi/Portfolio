@@ -1,12 +1,12 @@
 Portfolio Website
 
-A website that showcases all of my portfolio projects that I created.
+A website that showcases all of the portfolio projects that I created.
 
-Features
-. Built using Javascript, HTML, CSS, JavaScript, & React
-. Mobile-responsive
-. The portfolio includes;
+Features:
 
-- The mock up of a real single page website
-- A Dictionary with API keys using JSON data.
-- A Sight Words Generator
+- Built using HTML, CSS, and JavaScript
+- Mobile-responsive
+- The portfolio includes;
+
+  - The whole page mock up of a real website
+  - A Dictionary built with API keys using JSON data from Merriam-Websters Dictionary/Thesaurus
