@@ -157,14 +157,17 @@ p {
   .nav__item {
     border: 0;
   }
+
+  .nav.collapsible--expanded .nav__toggler {
+    opacity: 0;
+  }
 }
 
 /* Collapsible */
-
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s;
 }
 
