@@ -349,7 +349,3 @@ footer {
 .backtotop_link {
   padding-top: 0.8rem;
 }
-
-.backtotop_link:hover {
-  fill: var(--color-headings);
-}
